@@ -10,7 +10,7 @@ class Triangle(val a: Point, val b: Point, val c: Point) {
 
     //метод нахождения площади треугольника
     private fun Area() : Double {
-        //нахождение периметра треугольника
+        //нахождение половины периметра треугольника
         val perimeter = ((length(a,b) + length(b,c) + length(a,c)) / 2.0)
         //нахождение площади треугольника
         return sqrt(perimeter * ((perimeter - length(a,b)) *(perimeter - length(b,c)) * (perimeter - length(a,c))))
